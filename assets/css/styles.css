@@ -1,0 +1,193 @@
+:root {
+    --primary-color: #3498db;
+    --primary-dark: #2980b9;
+    --secondary-color: #2ecc71;
+    --danger-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --gray-color: #95a5a6;
+    --border-radius: 4px;
+    --box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Estructura base */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Barra de navegación */
+.admin-header {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-nav li {
+    margin-left: 20px;
+}
+
+.admin-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Tarjetas y contenedores */
+.card {
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Tablas */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.data-table th, 
+.data-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.data-table th {
+    background-color: #f2f2f2;
+    font-weight: 600;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+}
+
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+}
+
+/* Formularios */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+}
+
+/* Alertas */
+.alert {
+    padding: 10px 15px;
+    border-radius: var(--border-radius);
+    margin-bottom: 15px;
+}
+
+.alert.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Estatus */
+.status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.status-badge.pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status-badge.in_progress {
+    background-color: #cce5ff;
+    color: #004085;
+}
+
+.status-badge.completed {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* Paginación */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-link {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background: white;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: var(--primary-color);
+    border-radius: 3px;
+}
+
+.page-link:hover {
+    background: #f5f5f5;
+}
+
+.current-page {
+    margin: 0 10px;
+    padding: 5px 10px;
+}
